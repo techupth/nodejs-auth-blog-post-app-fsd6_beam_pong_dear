@@ -1,6 +1,6 @@
 import { ObjectId } from 'mongodb';
 import { Router } from 'express';
-import { db } from '../utils/db.mjs';
+import { db } from '../utils/db.js';
 
 const postRouter = Router();
 
