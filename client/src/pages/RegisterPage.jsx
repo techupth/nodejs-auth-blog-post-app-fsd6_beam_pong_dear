@@ -6,9 +6,10 @@ function RegisterPage() {
   const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
 
+  const { register } = useAuth();
   const handleSubmit = (event) => {
     event.preventDefault();
-    // 🐨 Todo: Exercise #2
+    // 🐨 Todo: Exercise #2 DONE
     // นำ Function `register` ใน AutContext มา Execute ใน Event Handler ตรงนี้
     const data = {
       username,

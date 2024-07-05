@@ -8,8 +8,8 @@ function UnauthenticatedApp() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<LoginPage />} />
       </Routes>
     </div>

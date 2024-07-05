@@ -1,12 +1,17 @@
 import { useState } from "react";
+import { useAuth, AuthProvider } from "../contexts/authentication";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+  const { login } = useAuth();
   const handleSubmit = (event) => {
     event.preventDefault();
-    // 🐨 Todo: Exercise #4
+    login({
+      username,
+      password,
+    });
+    // 🐨 Todo: Exercise #4 DONE
     //  นำ Function `login` ใน AuthContext มา Execute ใน Event Handler ตรงนี้
   };
 
